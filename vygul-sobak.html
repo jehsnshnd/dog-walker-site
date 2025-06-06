@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Вигул собак Чернівці</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f5f0;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 28px;
+      color: #333;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li::before {
+      content: "✔ ";
+      color: green;
+    }
+    .price {
+      font-size: 24px;
+      color: #000;
+      margin-top: 10px;
+    }
+    button {
+      background-color: #333;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #555;
+    }
+    .info {
+      margin-top: 20px;
+      font-size: 18px;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🐾 Вигул собак малих і середніх порід</h1>
+  <p>Не встигаєте вигуляти свого улюбленця?<br>Я із задоволенням допоможу!</p>
+
+  <ul>
+    <li>Індивідуальний підхід</li>
+    <li>Пунктуальність і відповідальність</li>
+    <li>Безпечні маршрути в зручний для вас час</li>
+  </ul>
+
+  <p class="info">📍 Місто Чернівці</p>
+  <p class="price">120 грн / година</p>
+
+  <button onclick="showContact()">Купити</button>
+
+  <p id="contact" class="info" style="display: none;">
+    📞 Телефонуйте: <br>
+    096-543-17-94 або 068-591-10-86
+  </p>
+
+  <script>
+    function showContact() {
+      document.getElementById('contact').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
